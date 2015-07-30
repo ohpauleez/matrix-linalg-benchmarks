@@ -1,4 +1,5 @@
 | Matrix Dimentions | Neanderthal | jBLAS | Vectorz | ND4J | Neanderthal vs ND4J | Neanderthal vs Vectorz |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 2x2 | 274.11400 ns | 24.93388 µs | 140.99100 ns | 355.62519 ns | 1.30 | 0.51 |
 | 4x4 | 300.17472 ns | 26.04584 µs | 335.03373 ns | 543.67963 ns | 1.81 | 1.12 |
 | 8x8 | 456.87588 ns | 26.42138 µs | 1.38795 µs | 1.61135 µs | 3.53 | 3.04 |

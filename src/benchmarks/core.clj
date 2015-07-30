@@ -62,6 +62,7 @@
 (defn generate-markdown-report [neanderthal-results jblas-results vectorz-results nd4j-results]
   (apply str
          "| Matrix Dimentions | Neanderthal | jBLAS | Vectorz | ND4J | Neanderthal vs ND4J | Neanderthal vs Vectorz |\n"
+         "| :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n"
          (map #(format "| %s | %s | %s | %s | %s | %.2f | %.2f |\n" %1 %2 %3 %4 %5 %6 %7)
               (map #(str (long (pow 2 %)) \x (long (pow 2 %))) (range 1 (inc (count neanderthal-results))))
               (map format-scaled neanderthal-results)
